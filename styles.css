@@ -1,68 +1,88 @@
+/* ====== BASIC PAGE STYLING ====== */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-#todo-app {
-    width: 100%;
-    max-width: 400px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+/* ====== CONTAINER STYLING ====== */
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* ====== HEADING ====== */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* ====== INPUT & BUTTON SECTION ====== */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
 }
 
 #task-input {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
 }
 
 #add-task-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #add-task-btn:hover {
-    background-color: #0056b3;
+  background-color: #43a047;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/* ====== TASK LIST ====== */
+#task-list {
+  list-style-type: none;
+  padding: 0;
 }
 
-li {
-    background-color: #eeeeee;
-    margin-top: 8px;
-    padding: 10px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* ====== INDIVIDUAL TASK ITEM ====== */
+#task-list li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* ====== REMOVE BUTTON ====== */
 .remove-btn {
-    cursor: pointer;
-    background-color: #ff6347;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .remove-btn:hover {
-    background-color: #d9534f;
+  background-color: #c62828;
 }
